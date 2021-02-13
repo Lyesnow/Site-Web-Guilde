@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <style>
+        a { color: white;}
+    </style>
+  <title>Inscription </title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="./guilde.css"> 
+</head>
+<body>
+
+    <div class="header">
+  
+        
+    
+        <h1 class="couleur_blanc">No Strat</h1>
+        <p class="couleur_blanc">Bienvenu sur le site de la guilde : "No Strat".</p>
+      </div>
+      
+      <div class="topnav">
+        <a href="Membres.html"> Membres </a>
+        <a href="Rooster.html"> Rooster </a>
+      <a href="Hierachie.html">Hiérachie</a>
+      <a href="Recrutement.html">Recrutement</a>
+      <a href="#">Fiche de la guilde </a>
+      <a href="#">planning</a>
+      <a href="#">Forum</a>
+      <a href="#">Aide spé</a>
+      <a href="Inscription Membres deux.html"> Inscription  </a></p>
+      <a href="Siteguilde.html" style="float:right"> Accueil </a>
+        
+      </div>
+      <br>
+      <div class="container-fluid">
+        <h1 style =" text-align: center">Merci de vous inscrire</h1>
+        <p style =" text-align: center; color :  white ">  <span class="souligne">Vous inscrire vous permet de discuter, partager et voir plus de 
+         contenu dans notre site web.</span>
+         </p>
+    </div> 
+<div class="container">
+    
+    <form action="/action_page.php" class="needs-validation" novalidate>
+        
+  
+
+    
+    <div class="form-group">
+        <label for="uname">Nom d'utilisateur :</label>
+          <input type="text" class="form-control" id="uname" placeholder="Entrer un nom d'utilisateur." name="uname" required>
+            <div class="valid-feedback">Valide.</div>
+              <div class="invalid-feedback">champ obligatoire.</div>
+    </div>
+
+    <div class="form-group">
+      <label for="pwd">Mot de passe :</label>
+        <input type="password" class="form-control" id="pwd" placeholder="Entrer un mot de passe." name="pswd" required>
+          <div class="valid-feedback">Valide.</div>
+            <div class="invalid-feedback">champ obligatoire.</div>
+    </div>
+<br/>
+    
+  <div class="form-group">
+      <label for="exampleInputEmail1">Adresse mail :</label>
+        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Entrer une adresse mail.">
+          <div class="valid-feedback">Valide.</div>
+            <div class="invalid-feedback">champ obligatoire .</div>
+    </div>
+<br/>   
+    <div class="form-group form-check">
+      <label class="form-check-label"></label>
+        <input class="form-check-input" type="checkbox" name="remember" required> J'accepte les conditions d'utilisation du site.
+          <div class="valid-feedback">Valide.</div>
+            <div class="invalid-feedback">Merci de cochez cette case pour continuer.</div>
+    </div>
+    
+    <button type="submit" class="btn btn-primary">Soumettre</button>
+      </form>
+</div>
+<div >
+    <p  style =" text-align: center " > <a href="file:///C:/Users/Lyeso/OneDrive/Bureau/Site%20Guilde/Siteguilde.html"> Accueil </a></p>
+</div>
+
+<script>
+// Disable form submissions if there are invalid fields
+(function() {
+  'use strict';
+  window.addEventListener('load', function() {
+    // Get the forms we want to add validation styles to
+    var forms = document.getElementsByClassName('needs-validation');
+    // Loop over them and prevent submission
+    var validation = Array.prototype.filter.call(forms, function(form) {
+      form.addEventListener('submit', function(event) {
+        if (form.checkValidity() === false) {
+          event.preventDefault();
+          event.stopPropagation();
+        }
+        form.classList.add('was-validated');
+      }, false);
+    });
+  }, false);
+})();
+</script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+</body>
+</html>
